@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Believe in the Beard</title>
+<meta name="description" content="Get in touch with Believe in the Beard, a real-beard Santa serving the Capital District of New York.">
+<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a class="nav__brand" href="index.html">
+      <img src="images/logo.png" alt="Believe in the Beard logo">
+      <span class="nav__brand-text">Believe in the Beard<span>Capital District, NY &middot; Est. 2021</span></span>
+    </a>
+    <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a class="nav__cta" href="booking.html">Book Santa</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <span class="eyebrow">Get in Touch</span>
+      <h1>We'd Love to Hear From You</h1>
+      <p>Questions about availability, pricing, or planning a visit? Reach out any time — for a specific date, use the <a href="booking.html" style="color:var(--gold-light); text-decoration:underline;">booking form</a> instead so nothing gets missed.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+
+          <div class="contact-info__item">
+            <span class="icon">✉️</span>
+            <div>
+              <div>Email</div>
+              <a href="mailto:jasonwdion@gmail.com">jasonwdion@gmail.com</a><br>
+              <a href="mailto:juliedion1@gmail.com">juliedion1@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <span class="icon">📍</span>
+            <div>
+              <div>Service Area</div>
+              <div>Capital District, NY — Albany, Schenectady, Troy, Saratoga Springs &amp; surrounding towns</div>
+            </div>
+          </div>
+
+          <div class="contact-info__item">
+            <span class="icon">🎅</span>
+            <div>
+              <div>Believe in the Beard</div>
+              <div>Est. 2021</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-card" style="padding:32px;">
+          <!--
+            SETUP NOTE: same Formspree setup as booking.html — replace
+            YOUR_FORM_ID once the Formspree account/form is created.
+          -->
+          <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+            <input type="hidden" name="_subject" value="New general inquiry — Believe in the Beard">
+            <input type="hidden" name="_cc" value="juliedion1@gmail.com">
+            <input type="text" name="_gotcha" style="display:none">
+
+            <div class="form-field" style="margin-bottom:18px;">
+              <label for="c-name">Full Name</label>
+              <input type="text" id="c-name" name="name" required>
+            </div>
+
+            <div class="form-field" style="margin-bottom:18px;">
+              <label for="c-email">Email Address</label>
+              <input type="email" id="c-email" name="email" required>
+            </div>
+
+            <div class="form-field" style="margin-bottom:18px;">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" required placeholder="How can we help?"></textarea>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn--red btn--block">Send Message</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="Believe in the Beard logo">
+        <div>
+          <h4>Believe in the Beard</h4>
+          <p>Real-beard Santa serving the Capital District of New York since 2021.</p>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Book Santa</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Reach Us</h4>
+        <ul>
+          <li><a href="mailto:jasonwdion@gmail.com">jasonwdion@gmail.com</a></li>
+          <li><a href="mailto:juliedion1@gmail.com">juliedion1@gmail.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; <span id="year"></span> Believe in the Beard. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
