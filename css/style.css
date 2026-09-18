@@ -321,6 +321,8 @@ p {
   display: block;
   width: 100%;
   height: auto;
+  -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 55%, transparent 100%);
+  mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 55%, transparent 100%);
 }
 
 @keyframes fly-across {
