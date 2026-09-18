@@ -195,6 +195,8 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 10px 24px;
+  min-height: 130px;
+  box-sizing: content-box;
 }
 
 .nav__brand {
@@ -207,6 +209,8 @@ p {
   width: 130px;
   object-fit: contain;
   display: block;
+  -webkit-mask-image: radial-gradient(circle at 50% 50%, #000 62%, transparent 88%);
+  mask-image: radial-gradient(circle at 50% 50%, #000 62%, transparent 88%);
 }
 
 .nav__links {
@@ -321,8 +325,8 @@ p {
   display: block;
   width: 100%;
   height: auto;
-  -webkit-mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 55%, transparent 100%);
-  mask-image: radial-gradient(ellipse 78% 72% at 50% 50%, #000 55%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 48% 42% at 50% 50%, #000 15%, transparent 80%);
+  mask-image: radial-gradient(ellipse 48% 42% at 50% 50%, #000 15%, transparent 80%);
 }
 
 @keyframes fly-across {
@@ -952,6 +956,10 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .nav {
+    min-height: 84px;
+  }
+
   .nav__brand {
     width: 84px;
   }
