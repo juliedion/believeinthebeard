@@ -191,29 +191,22 @@ p {
 }
 
 .nav {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px 24px;
-  min-height: 66px;
+  padding: 10px 24px;
 }
 
 .nav__brand {
-  position: relative;
-  width: 210px;
-  height: 1px;
+  display: flex;
+  align-items: center;
 }
 
 .nav__brand-video {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 210px;
-  width: 210px;
+  height: 130px;
+  width: 130px;
   object-fit: contain;
-  z-index: 5;
+  display: block;
 }
 
 .nav__links {
