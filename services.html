@@ -5,19 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Services | Believe in the Beard</title>
 <meta name="description" content="Home visits, corporate and community events, photo sessions, and virtual visits with a real-beard Santa in the Capital District of New York.">
-<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="icon" href="images/logo-face.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
 <header class="site-header">
   <nav class="nav container">
     <a class="nav__brand" href="index.html">
-      <img src="images/logo.png" alt="Believe in the Beard logo">
-      <span class="nav__brand-text">Believe in the Beard<span>Capital District, NY &middot; Est. 2021</span></span>
+      <video class="nav__brand-video" autoplay loop muted playsinline aria-label="Believe in the Beard animated logo">
+        <source src="images/logo-animated.mp4?v=3" type="video/mp4">
+      </video>
     </a>
     <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     <ul class="nav__links">
@@ -105,12 +106,14 @@
     </div>
   </section>
 
-  <section class="section section--tight">
+  <section class="cta-section cta-section--tight">
     <div class="container">
       <div class="cta-banner">
-        <h2>Not Sure What You Need?</h2>
-        <p>Tell us a bit about your event or family, and we'll help you find the right fit.</p>
-        <a class="btn btn--red" href="booking.html">Start Your Booking Request</a>
+        <div class="cta-banner__text">
+          <h2>Not Sure What You Need?</h2>
+          <p>Tell us a bit about your event or family, and we'll help you find the right fit.</p>
+        </div>
+        <a class="btn btn--navy" href="booking.html">Start Your Booking Request</a>
       </div>
     </div>
   </section>
@@ -118,10 +121,13 @@
 </main>
 
 <footer class="site-footer">
+  <div class="starry-bg" aria-hidden="true">
+    <div data-starfield="60"></div>
+  </div>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/logo.png" alt="Believe in the Beard logo">
+        <img src="images/logo-face.png" alt="Believe in the Beard logo">
         <div>
           <h4>Believe in the Beard</h4>
           <p>Real-beard Santa serving the Capital District of New York since 2021.</p>
@@ -139,8 +145,7 @@
       <div class="footer-col">
         <h4>Reach Us</h4>
         <ul>
-          <li><a href="mailto:jasonwdion@gmail.com">jasonwdion@gmail.com</a></li>
-          <li><a href="mailto:juliedion1@gmail.com">juliedion1@gmail.com</a></li>
+          <li><a href="tel:+15188927495">(518) 892-7495</a></li>
         </ul>
       </div>
     </div>

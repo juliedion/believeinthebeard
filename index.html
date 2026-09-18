@@ -5,19 +5,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Believe in the Beard | Real-Beard Santa, Capital District NY</title>
 <meta name="description" content="Believe in the Beard brings a real-beard Santa to homes, businesses, and community events across the Capital District of New York. Home visits, corporate events, photo sessions, and virtual visits.">
-<link rel="icon" href="images/logo.png" type="image/png">
+<link rel="icon" href="images/logo-face.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css?v=8">
 </head>
 <body>
 
 <header class="site-header">
   <nav class="nav container">
     <a class="nav__brand" href="index.html">
-      <img src="images/logo.png" alt="Believe in the Beard logo">
-      <span class="nav__brand-text">Believe in the Beard<span>Capital District, NY &middot; Est. 2021</span></span>
+      <video class="nav__brand-video" autoplay loop muted playsinline aria-label="Believe in the Beard animated logo">
+        <source src="images/logo-animated.mp4?v=3" type="video/mp4">
+      </video>
     </a>
     <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
     <ul class="nav__links">
@@ -32,15 +33,41 @@
 <main>
 
   <section class="hero">
-    <div class="container">
-      <img class="hero__logo" src="images/logo.png" alt="Believe in the Beard — real beard Santa logo">
-      <h1>Real Beard. <em>Real Magic.</em></h1>
-      <p class="hero__tagline">Bringing an authentic, real-bearded Santa to homes, businesses, and community events across the Capital District of New York.</p>
-      <div class="hero__actions">
-        <a class="btn btn--gold" href="booking.html">Book Santa</a>
-        <a class="btn btn--outline" href="services.html">View Services</a>
+    <div class="hero__sky" aria-hidden="true">
+      <div class="hero__moon"></div>
+      <div data-starfield="90"></div>
+      <div class="hero__sleigh-track">
+        <video class="hero__sleigh" autoplay loop muted playsinline aria-label="Santa and his reindeer flying across the night sky">
+          <source src="images/santa-sleigh.mp4?v=3" type="video/mp4">
+        </video>
       </div>
-      <p class="hero__badge">Serving the Capital District &middot; Est. 2021</p>
+    </div>
+    <div class="container">
+      <div class="hero__inner">
+        <div class="hero__content">
+          <h1>Real Beard.<br><em>Real Magic.</em></h1>
+          <p class="hero__tagline">Bringing an authentic, real-bearded Santa to homes, businesses, and community events across the Capital District of New York.</p>
+          <div class="hero__actions">
+            <a class="btn btn--gold" href="booking.html">Book Santa</a>
+            <a class="btn btn--outline" href="services.html">View Services</a>
+          </div>
+          <p class="hero__badge">Serving the Capital District &middot; Est. 2021</p>
+        </div>
+        <div class="photo-frame">
+          <div class="photo-changer" id="photo-changer">
+            <img class="photo-changer__img is-active" src="images/gallery/studio-portrait.jpg" alt="Santa posing in a snowy forest backdrop">
+            <img class="photo-changer__img" src="images/gallery/home-visit-with-girl.jpg" alt="Santa with a young girl during a home visit">
+            <img class="photo-changer__img" src="images/gallery/community-event-hats.jpg" alt="Santa with guests at a community event">
+            <img class="photo-changer__img" src="images/gallery/home-visit-porch.jpg" alt="Santa with two children on a front porch">
+            <img class="photo-changer__img" src="images/gallery/photo-session-fireplace.jpg" alt="Santa portrait in front of a decorated fireplace">
+            <img class="photo-changer__img" src="images/gallery/community-event-hallway.jpg" alt="Santa with a family at a school event">
+            <img class="photo-changer__img" src="images/gallery/home-visit-living-room.jpg" alt="Santa talking with a child in a living room">
+            <img class="photo-changer__img" src="images/gallery/community-event-solo.jpg" alt="Santa portrait at a community event">
+            <img class="photo-changer__img" src="images/gallery/community-event-portrait.jpg" alt="Santa with guests at a holiday gathering">
+          </div>
+          <img class="frame-overlay" src="images/frame-vintage-gold.png" alt="" aria-hidden="true">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -64,6 +91,23 @@
             <strong>4</strong>
             <span>Ways to Visit</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-santa">
+        <div class="about-santa__photo">
+          <img src="images/santa-jay-family.jpg" alt="Santa Jay with his wife Julie and sons Casey and Austin">
+        </div>
+        <div class="about-santa__content">
+          <span class="eyebrow">About Santa Jay</span>
+          <h2>The Man Behind the Beard</h2>
+          <p>When Jay isn't spreading real Christmas magic across the Capital District, he's home in Rotterdam, NY with the people (and pups) who matter most.</p>
+          <p>He's been married to his wife Julie for 13 years, and together they're raising two boys, Casey (11) and Austin (9) — plus two very good dogs, Lacey and Otis.</p>
+          <p>That same warmth Jay brings home every day is exactly what he brings to every visit, every event, and every family he meets as Santa.</p>
         </div>
       </div>
     </div>
@@ -104,12 +148,14 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="cta-section">
     <div class="container">
       <div class="cta-banner">
-        <h2>Ready to Bring Real Christmas Magic to Your Event?</h2>
-        <p>Tell us a little about what you have in mind, and we'll get back to you to make it happen.</p>
-        <a class="btn btn--red" href="booking.html">Start Your Booking Request</a>
+        <div class="cta-banner__text">
+          <h2>Ready to Bring Real Christmas Magic to Your Event?</h2>
+          <p>Tell us a little about what you have in mind, and we'll get back to you to make it happen.</p>
+        </div>
+        <a class="btn btn--navy" href="booking.html">Start Your Booking Request</a>
       </div>
     </div>
   </section>
@@ -117,10 +163,13 @@
 </main>
 
 <footer class="site-footer">
+  <div class="starry-bg" aria-hidden="true">
+    <div data-starfield="60"></div>
+  </div>
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <img src="images/logo.png" alt="Believe in the Beard logo">
+        <img src="images/logo-face.png" alt="Believe in the Beard logo">
         <div>
           <h4>Believe in the Beard</h4>
           <p>Real-beard Santa serving the Capital District of New York since 2021.</p>
@@ -138,8 +187,7 @@
       <div class="footer-col">
         <h4>Reach Us</h4>
         <ul>
-          <li><a href="mailto:jasonwdion@gmail.com">jasonwdion@gmail.com</a></li>
-          <li><a href="mailto:juliedion1@gmail.com">juliedion1@gmail.com</a></li>
+          <li><a href="tel:+15188927495">(518) 892-7495</a></li>
         </ul>
       </div>
     </div>
